@@ -12,8 +12,7 @@ dias_semana = {
     "Sunday": "domingo"
 }
 
-fuso_brasilia = timezone(timedelta(hours=-3))
-data = datetime.now(fuso_brasilia)
+data = datetime.now()
 hoje_ingles = data.strftime("%A")
 data_atual = dias_semana.get(hoje_ingles, "segunda")
 
