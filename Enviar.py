@@ -19,8 +19,8 @@ def mensagem_enviar(parametro_tarefas):
         return "Você não tem compromissos agendados para hoje! Aproveite o dia."
     mensagem_str = ''
     for c in parametro_tarefas:
-        mensagem = f"Hoje as {c[0]}, voce tem o seguinte compromisso: {c[1]}"
-        mensagem_str += f"{mensagem} \n"
+        mensagem = f"Hoje as {c[0]}, você tem o seguinte compromisso: {c[1]}"
+        mensagem_str += f"""{mensagem} \n \n"""
     return mensagem_str
 
 #LÊ AS INFORMAÇÕES DE OUTRA ARQUIVO E DEFINE A MENSAGEM
@@ -32,7 +32,7 @@ print(mensagem_final)
 remetente = os.environ.get("EMAIL_USER")
 senha = os.environ.get("EMAIL_PASS")
 destinatario = "samuel.aguiar0106@gmail.com"
-msg = MIMEText(f"{mensagem_final}", "plain")
+msg = MIMEText(f" CUMPRA SEUS COMPROMISSOS: \n \n {mensagem_final}", "plain")
 msg["From"] = remetente
 msg["To"] = destinatario
 msg["Subject"] = f"Cronograma de Hoje - {data_atual.capitalize()}, horário: {hora_atual}"

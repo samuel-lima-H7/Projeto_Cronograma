@@ -1,15 +1,47 @@
-﻿Dia da semana;Horário;Tarefa
-segunda;1;teste 1
-segunda;2;teste 2 
-segunda;3;teste 3
-sexta;12;sim
-sexta;13;não
-terça;1;teste 
-terça;1;teste 1
-terça;2 ;teste 2
-quarta;1 ;teste 1
-quarta;2;teste 2
-quinta;1;
-quinta;1;teste 1
-sábado;1;teste 1
-domingo;1;testes 1
+﻿Dia;hora;tarefa
+segunda;06:00;academia
+segunda;07:30;futebol do miguel
+segunda;09:00;Estudo Pc
+segunda;10:20;Futebol miguel
+segunda;11:30;preparar almoço
+segunda;13:00;trabalhar
+segunda;20:00;Estudo SESA
+segunda;00:00;Dormir
+terça;06:00;academia
+terça;07:30;estudo
+terça;09:00;picicologo
+terça;10:00;tempo livre
+terça;11:30;Preparar almoço
+terça;13:00;trabalhar
+terça;20:00;Estudo SESA
+terça;00:00;dormir
+quarta;06:00;academia
+quarta;07:30;Futebol do Miguel
+quarta;09:00;pisicologo
+quarta;10:20;Futebol do MIguel
+quarta;11:30;preparar almoço
+quarta;13:00;trabalhar
+quarta;20:00;Estudo SESA
+quarta;00:00;Dormir
+quinta;06:00;academia
+quinta;07:30;estudo
+quinta;10:00;tempo livre
+quinta;11:30;preparar almoço
+quinta;13:00;tabalhar
+quinta;20:00;Estudo SESA
+quinta;00:00;Dormir
+sexta;06:00;academia
+sexta;07:30;Estudo PC
+sexta;09:30;Tempo LIvre
+sexta;10:20;Futebol do Miguel
+sexta;11:30;Preparar Almoço
+sexta;13:00;trabalhar
+sexta;20:00;Estudo SESA
+sexta;00:00;dormir
+sábado;05:00;Estudo
+sábado;08:00;Academia
+sábado;09:30;Tempo Livre
+sábado;11:30;Preparar Almoço
+sábado;13:00;Tempo Livre
+sábado;19:00;Estudo SESA
+sábado;00:00;DORMIR
