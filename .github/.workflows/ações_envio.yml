@@ -1,0 +1,30 @@
+name: Envio de Cronograma Diario
+
+on:
+  schedule:
+    # 04:22 UTC equivale exatamente às 01:22 da manhã no Horário de Brasília
+    - cron: '22 4 * * *'
+  workflow_dispatch: # Permite rodar manualmente pelo site para testar
+
+jobs:
+  executar-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar o Python no servidor
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        # Instala apenas o python-dotenv (exigido no seu Enviar.py)
+        run: pip install python-dotenv
+
+      - name: Executar o script de E-mail
+        # Passa as credenciais secretas do GitHub para o ambiente do script Python
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        run: python Enviar.py
