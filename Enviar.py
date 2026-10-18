@@ -31,7 +31,7 @@ print(mensagem_final)
 #DEFINIÇÃO DE VARIÁVEIS PARA ENVIO DE E-MAIL
 remetente = os.environ.get("EMAIL_USER")
 senha = os.environ.get("EMAIL_PASS")
-destinatario = "Wplimaw01@gmail.com"
+destinatario = "samuel.aguiar0106@gmail.com"
 msg = MIMEText(f" CUMPRA SEUS COMPROMISSOS: \n \n {mensagem_final}", "plain")
 msg["From"] = remetente
 msg["To"] = destinatario
